@@ -1,0 +1,7 @@
+@import "./variables.scss";
+
+@mixin card-template-1 {
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px $color-dark;
+}
