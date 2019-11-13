@@ -2,13 +2,15 @@
 
 @mixin card-template-1 {
   border: 1px solid $color-dark;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 1px 1px 3px $color-dark;
+  background-color: white;
 }
 
 @mixin card-template-1-flat {
   border: 1px solid $color-dark;
   border-radius: 5px;
+  background-color: white;
 }
 
 @mixin background-dark {
@@ -17,4 +19,12 @@
   .icon {
     color: $background-dark-icon;
   }
+}
+
+@mixin header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.8rem;
+  height: 10vh;
 }
