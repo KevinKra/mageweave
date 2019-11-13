@@ -5,19 +5,33 @@
   @include card-template-1;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  padding: 0.8rem;
   text-align: left;
+  .overview {
+    @include background-dark;
+  }
+  .body,
+  .overview {
+    padding: 0.8rem;
+  }
   .icon {
     color: $color-icon;
     margin-right: 0.3rem;
   }
-  div {
+  .location {
     display: flex;
   }
   h2 {
-    margin: 0.5rem 0;
+    padding: 0.2rem 0 0.4rem 0;
   }
+  h2,
   h4 {
     margin: 0;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: $font-dark;
   }
 }
