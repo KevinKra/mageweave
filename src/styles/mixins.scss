@@ -14,4 +14,7 @@
 @mixin background-dark {
   color: $background-dark-font;
   background-color: $background-dark;
+  .icon {
+    color: $background-dark-icon;
+  }
 }
