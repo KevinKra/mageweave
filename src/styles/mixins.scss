@@ -10,3 +10,8 @@
   border: 1px solid $color-dark;
   border-radius: 5px;
 }
+
+@mixin background-dark {
+  color: $background-dark-font;
+  background-color: $background-dark;
+}
