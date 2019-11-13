@@ -4,7 +4,12 @@ import "./ProfilePicture.scss"
 export default function ProfilePicture() {
   return (
     <div className="ProfilePicture">
-      <p>ProfilePicture</p>
+      <section className="image-container">
+        <img src="https://avatars1.githubusercontent.com/u/43081008?s=460&v=4" alt=""/>
+      </section>
+      <section className="text-tag">
+        <p>Hello, I love programming!</p>
+      </section>
     </div>
   )
 }
