@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.FeedUnit {
+  @include card-template-1-flat;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  overflow: hidden;
+  margin: 0.5rem;
+  .award {
+    @include background-dark;
+    height: 100%;
+  }
+  .award-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.5rem 3.5rem;
+    align-items: center;
+  }
+  .award-message {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+}
