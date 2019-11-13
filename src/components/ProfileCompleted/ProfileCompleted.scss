@@ -1,5 +1,5 @@
 .ProfileCompleted {
   border: 1px solid red;
-  height: 50vh;
-  width: 15vw;
+  grid-column: 4 / 5;
+  grid-row: 1 / 7;
 }

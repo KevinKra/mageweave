@@ -1,6 +1,13 @@
 .UserProfile {
   border: 1px solid red;
-  min-height: 100vh;
+  .profile-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0.8rem;
+    padding: 0.8rem;
+    min-height: 95vh;
+  }
 }
 
 .top-nav {
@@ -8,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid red;
+  height: 5vh;
   h3 {
     margin: 0px;
     padding: 0px;

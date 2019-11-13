@@ -1,5 +1,6 @@
 .ProfileBio {
   border: 1px solid red;
-  height: 50vh;
-  width: 15vw;
+  background: lightblue;
+  grid-column: 1 / 2;
+  grid-row: 3 / 7;
 }

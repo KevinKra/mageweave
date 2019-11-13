@@ -15,11 +15,13 @@ export default function UserProfile() {
         <a href="">anchor</a>
         <button>button</button>
       </nav>
-      <ProfilePicture />
-      <ProfileStats />
-      <ProfileBio />
-      <ProfileFeed />
-      <ProfileCompleted />
+<section className="profile-container">
+        <ProfilePicture />
+        <ProfileStats />
+        <ProfileBio />
+        <ProfileFeed />
+        <ProfileCompleted />
+</section>
     </div>
   )
 }
