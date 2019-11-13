@@ -4,7 +4,7 @@ import "./ProfileFeed.scss"
 
 export default function ProfileFeed() {
   return (
-    <div className="ProfileFeed">
+    <section className="ProfileFeed">
       <header>
         <h3>Recent Activity</h3>
       </header>
@@ -14,6 +14,6 @@ export default function ProfileFeed() {
       <FeedUnit message="Kevin completed the OOP Advanced Concepts quiz!" points="100" date="12/15/19"/>
       <FeedUnit message="Kevin completed the Intro to React course!" points="50" date="12/14/19"/>
       <FeedUnit message="Kevin just created an account!" points="15" date="12/14/19"/>
-    </div>
+    </section>
   )
 }
