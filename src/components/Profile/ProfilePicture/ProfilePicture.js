@@ -8,7 +8,7 @@ export default function ProfilePicture() {
         <img src="https://avatars1.githubusercontent.com/u/43081008?s=460&v=4" alt=""/>
       </section>
       <section className="text-tag">
-        <p>Hello, I love programming!</p>
+        <p>Always Learning.</p>
       </section>
     </div>
   )

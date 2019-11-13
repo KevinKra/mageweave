@@ -8,9 +8,9 @@
   text-align: left;
   .overview {
     @include background-dark;
+    @include header-block;
   }
-  .body,
-  .overview {
+  .body {
     padding: 0.8rem;
   }
   .icon {

@@ -5,4 +5,11 @@
   @include card-template-1;
   grid-column: 2 / 4;
   grid-row: 3 / 7;
+  header {
+    @include background-dark;
+    @include header-block;
+  }
+  h3 {
+    margin: 0;
+  }
 }
