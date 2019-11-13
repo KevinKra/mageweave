@@ -1,5 +1,7 @@
+@import "../../styles/mixins.scss";
+
 .ProfileCompleted {
-  border: 1px solid red;
+  @include card-template-1;
   grid-column: 4 / 5;
   grid-row: 1 / 7;
 }

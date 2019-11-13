@@ -1,6 +1,7 @@
+@import "../../styles/mixins.scss";
+
 .ProfileBio {
-  border: 1px solid red;
-  background: lightblue;
+  @include card-template-1;
   grid-column: 1 / 2;
   grid-row: 3 / 7;
 }
