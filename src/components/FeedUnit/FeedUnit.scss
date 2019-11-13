@@ -8,9 +8,27 @@
   align-items: center;
   overflow: hidden;
   margin: 0.5rem;
-  .award {
-    @include background-dark;
-    height: 100%;
+  color: $font-dark;
+  .award-section {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $background-dark;
+  }
+  .award-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $color-light;
+    border: 1px solid $background-dark;
+  }
+  .award-icon {
+    font-size: 60px;
+    color: $background-dark;
   }
   .award-details {
     display: grid;
