@@ -1,10 +1,10 @@
 import React from 'react'
 import "./UserProfile.scss"
-import ProfilePicture from '../../components/ProfilePicture/ProfilePicture';
-import ProfileStats from '../../components/ProfileStats/ProfileStats';
-import ProfileBio from '../../components/ProfileBio/ProfileBio';
-import ProfileFeed from '../../components/ProfileFeed/ProfileFeed';
-import ProfileCompleted from '../../components/ProfileCompleted/ProfileCompleted';
+import ProfilePicture from '../../components/Profile/ProfilePicture/ProfilePicture';
+import ProfileStats from '../../components/Profile/ProfileStats/ProfileStats';
+import ProfileBio from '../../components/Profile/ProfileBio/ProfileBio';
+import ProfileFeed from '../../components/Profile/ProfileFeed/ProfileFeed';
+import ProfileCompleted from '../../components/Profile/ProfileCompleted/ProfileCompleted';
 
 export default function UserProfile() {
   return (
