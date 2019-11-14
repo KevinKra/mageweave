@@ -3,16 +3,20 @@
 .NavBar {
   @include background-dark;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6vh;
-  padding: 0 5rem;
+  padding: 0;
   position: sticky;
   top: 0px;
   z-index: 5;
-  h3 {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  h2 {
     margin: 0px;
-    padding: 0px;
+    padding: 0.5rem 0;
   }
   button {
     border: none;
@@ -20,7 +24,7 @@
     height: 1.7rem;
   }
   a {
-    color: white;
+    color: $background-dark-font;
     text-decoration: none;
     padding: 1rem;
   }
