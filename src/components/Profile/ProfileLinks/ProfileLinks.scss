@@ -10,6 +10,7 @@
   justify-content: space-evenly;
   padding: 0.8rem;
   text-align: left;
+  border-radius: 0;
   .icon {
     color: $color-icon;
     margin-right: 0.6rem;
@@ -36,25 +37,20 @@
   }
 }
 
-// Small devices (landscape phones, 876px and up)
 @media (min-width: 320px) {
   .ProfileLinks {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    border-radius: 0;
+    // no change
   }
 }
 
 @media (min-width: 480px) {
   .ProfileLinks {
     grid-column: 4 / 7;
-    grid-row: 4 / 5;
   }
 }
 
 @media (min-width: 876px) {
   .ProfileLinks {
     grid-column: 1 / 2;
-    grid-row: 4 / 5;
   }
 }

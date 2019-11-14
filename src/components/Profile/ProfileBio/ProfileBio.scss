@@ -28,7 +28,6 @@
   }
 }
 
-// Small devices (landscape phones, 876px and up)
 @media (min-width: 320px) {
   .ProfileBio {
     grid-column: 1 / 2;
@@ -52,7 +51,6 @@
 
 @media (min-width: 1200px) {
   .ProfileBio {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    // no changes
   }
 }
