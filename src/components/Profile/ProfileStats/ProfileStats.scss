@@ -43,7 +43,7 @@
 }
 
 // Small devices (landscape phones, 800px and up)
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .ProfileStats {
     @include card-template-1;
     grid-column: 1 / 2;
