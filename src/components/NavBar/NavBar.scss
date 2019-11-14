@@ -33,7 +33,6 @@
 @media (min-width: 320px) {
   .NavBar {
     .content {
-      display: flex;
       flex-direction: column;
       width: 100%;
     }
@@ -51,6 +50,44 @@
     }
     a {
       font-size: 14px;
+      padding: 0.3rem;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .NavBar {
+    .content {
+      flex-direction: row;
+      width: 90%;
+    }
+    section {
+      width: 60%;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: 876px) {
+  .NavBar {
+    .content {
+      flex-direction: row;
+      width: 90%;
+    }
+    h2 {
+      margin: 0px;
+      padding: 0.4rem 0 0.6rem 0;
+      font-size: 26px;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      border-bottom: none;
+    }
+    a {
+      font-size: 16px;
       padding: 0.3rem;
     }
   }
