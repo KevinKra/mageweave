@@ -4,11 +4,9 @@
   @include card-template-1-flat;
   grid-column: 4 / 5;
   grid-row: 1 / 7;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
-// Small devices (landscape phones, 800px and up)
+// Small devices (landscape phones, 876px and up)
 @media (min-width: 320px) {
   .ProfileCompleted {
     grid-column: 1 / 2;
@@ -21,10 +19,38 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .ProfileCompleted {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-column: 3 / 7;
+    grid-row: 1 / 4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    header {
+      @include background-dark;
+      @include header-block;
+    }
+  }
+}
+
+@media (min-width: 876px) {
+  .ProfileCompleted {
+    grid-column: 4 / 5;
+    grid-row: 1 / 7;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    header {
+      @include background-dark;
+      @include header-block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .ProfileCompleted {
+    grid-column: 4 / 5;
+    grid-row: 1 / 7;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     header {
       @include background-dark;
       @include header-block;
