@@ -1,3 +1,4 @@
+@import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 
 .UserProfile {
@@ -29,5 +30,44 @@
       ),
       radial-gradient($background-pattern 2px, transparent 0);
     background-size: 30px 30px, 30px 30px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1900px) {
+  .UserProfile {
+    .profile-container {
+      width: 65vw;
+      max-width: 1660px;
+    }
+    .NavBar {
+      .content {
+        width: 65%;
+        max-width: 1660px;
+      }
+      h2 {
+        font-size: 32px;
+        padding: 1rem 0;
+      }
+      button {
+        width: 7rem;
+        height: 2.7rem;
+      }
+      a {
+        padding: 1rem;
+      }
+    }
   }
 }
