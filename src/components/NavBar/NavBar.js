@@ -8,6 +8,7 @@ export default function NavBar() {
         <h2>Mageweave</h2>
         <div>
           <a href="">Home</a>
+          <a href="">Learn</a>
           <a href="">Challenges</a>
           <button>Profile</button>
         </div>
