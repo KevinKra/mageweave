@@ -29,3 +29,29 @@
     padding: 1rem;
   }
 }
+
+@media (max-width: 320px) {
+  .NavBar {
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    h2 {
+      margin: 0px;
+      padding: 0.4rem 0 0.6rem 0;
+      font-size: 26px;
+    }
+    section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+    a {
+      font-size: 14px;
+      padding: 0.3rem;
+    }
+  }
+}

@@ -41,3 +41,25 @@
 .achievements {
   width: 70%;
 }
+
+// Small devices (landscape phones, 800px and up)
+@media (max-width: 320px) {
+  .ProfileStats {
+    @include card-template-1;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    overflow: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    h2 {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -7,3 +7,27 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+// Small devices (landscape phones, 800px and up)
+@media (min-width: 320px) {
+  .ProfileCompleted {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    border-radius: 0;
+    header {
+      @include background-dark;
+      @include header-block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ProfileCompleted {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    header {
+      @include background-dark;
+      @include header-block;
+    }
+  }
+}

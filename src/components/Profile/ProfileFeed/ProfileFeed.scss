@@ -10,3 +10,13 @@
     @include header-block;
   }
 }
+
+// Small devices (landscape phones, 800px and up)
+@media (min-width: 320px) {
+  .ProfileFeed {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+}
