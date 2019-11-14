@@ -1,0 +1,31 @@
+@import "../../styles/mixins.scss";
+
+.NavBar {
+  @include background-dark;
+  display: flex;
+  padding: 0;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  h2 {
+    margin: 0px;
+    padding: 0.5rem 0;
+  }
+  button {
+    border: none;
+    width: 5rem;
+    height: 1.7rem;
+  }
+  a {
+    color: $background-dark-font;
+    text-decoration: none;
+    padding: 1rem;
+  }
+}

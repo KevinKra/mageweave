@@ -1,0 +1,30 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.ProfileBio {
+  @include card-template-1;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  text-align: left;
+  .overview {
+    @include background-dark;
+    @include header-block;
+  }
+  .body {
+    padding: 0.8rem;
+  }
+  .icon {
+    color: $color-icon;
+    margin-right: 0.3rem;
+  }
+  .location {
+    display: flex;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: $font-dark;
+  }
+}

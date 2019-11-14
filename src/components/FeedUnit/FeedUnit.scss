@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.FeedUnit {
+  @include card-template-1-flat;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  overflow: hidden;
+  margin: 0.5rem;
+  color: $font-dark;
+  .award-section {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $background-dark;
+  }
+  .award-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $color-light;
+    border: 1px solid $background-dark;
+  }
+  .award-icon {
+    font-size: 60px;
+    color: $background-dark;
+  }
+  .award-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.5rem 3.5rem;
+    align-items: center;
+  }
+  .award-message {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+}

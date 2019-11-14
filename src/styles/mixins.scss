@@ -2,6 +2,57 @@
 
 @mixin card-template-1 {
   border: 1px solid $color-dark;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 1px 1px 3px $color-dark;
+  background-color: white;
+}
+
+@mixin card-template-1-flat {
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@mixin background-dark {
+  color: $background-dark-font;
+  background-color: $background-dark;
+  .icon {
+    color: $background-dark-icon;
+  }
+}
+
+@mixin header-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.8rem;
+  height: 10vh;
+  h2 {
+    padding: 0.2rem 0 0.4rem 0;
+  }
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+  }
+
+  // Extra large devices (large desktops, 1600px and up)
+  @media (min-width: 1900px) {
+    height: 7vh;
+    h3 {
+      font-size: 24px;
+    }
+  }
 }
