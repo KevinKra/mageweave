@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.CompleteBadge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid $color-dark;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  width: 95%;
+  height: 100px;
+  h3,
+  h5,
+  p {
+    margin: 0;
+  }
+}
