@@ -6,12 +6,12 @@ export default function NavBar() {
     <nav className="NavBar">
       <div className="content">
         <h2>Mageweave</h2>
-        <div>
+        <section>
           <a href="">Home</a>
           <a href="">Learn</a>
           <a href="">Challenges</a>
-          <button>Profile</button>
-        </div>
+          <a href="">Profile</a>
+        </section>
       </div>
     </nav>
   )
