@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.RankMarker {
+  position: absolute;
+  left: -12px;
+  top: -7px;
+  transform: rotate(-2deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $accent-one-dark;
+  background-color: $accent-one;
+  box-shadow: 1px 1px 5px $background-dark;
+  color: $color-light;
+  padding: 10px;
+  height: 25px;
+}
