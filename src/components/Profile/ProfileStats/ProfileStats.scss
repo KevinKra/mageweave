@@ -3,12 +3,8 @@
 
 .ProfileStats {
   @include card-template-1;
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
   display: flex;
   overflow: hidden;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .streak-tracker {
@@ -40,4 +36,51 @@
 
 .achievements {
   width: 70%;
+}
+
+// Small devices (landscape phones, 876px and up)
+@media (min-width: 320px) {
+  .ProfileStats {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    h2 {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .ProfileStats {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }
+
+  .streak-tracker {
+    h4 {
+      margin: 0;
+    }
+    p {
+      font-size: 26px;
+      margin: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 876px) {
+  .ProfileStats {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  // no change
 }

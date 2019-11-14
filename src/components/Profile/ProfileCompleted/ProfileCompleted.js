@@ -6,7 +6,7 @@ export default function ProfileCompleted() {
   return (
     <section className="ProfileCompleted"> 
       <header>
-        <p>Completed Courses</p>
+        <h3>Completed Courses</h3>
       </header>
       <CompleteBadge title="Intro to JavaScript" score="95" difficulty="4" />
       <CompleteBadge title="Advanced JavaScript" score="75" difficulty="4" />
