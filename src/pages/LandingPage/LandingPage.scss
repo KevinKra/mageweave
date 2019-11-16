@@ -1,0 +1,67 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/animations.scss";
+
+.LandingPage {
+  .splash-landing {
+    @include background-pattern-one;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .title-card {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+  .title-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+    border: 2px solid $accent-one;
+    background-color: $background-dark;
+  }
+  h1 {
+    cursor: default;
+    margin-bottom: 0;
+    padding: 1rem 1.5rem;
+    font-size: 52px;
+    color: $accent-one;
+    font-family: $font-title;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $color-light;
+  }
+  li {
+    cursor: default;
+    list-style: none;
+    font-size: 18px;
+  }
+  .button-one {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    background-color: $background-dark;
+    color: $color-light;
+    padding: 0.8rem 2rem;
+    margin: 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
