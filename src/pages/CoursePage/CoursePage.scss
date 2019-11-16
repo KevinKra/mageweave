@@ -5,6 +5,31 @@
   .course-page-content {
     @include background-pattern-one;
     @include page-template-one;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: $grid-gap-one;
+  }
+  .course-overview {
+    @include card-template-1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border: 1px solid black;
+  }
+  .course-section {
+    margin: 0 auto;
     border: 1px solid red;
+    width: 80%;
+  }
+  .chapter-container {
+    border: 1px solid blue;
+    height: 100vh;
+    margin-bottom: 1rem;
+  }
+  .support-content {
+    @include card-template-1-flat;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    border: 1px solid black;
   }
 }
