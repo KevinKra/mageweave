@@ -1,0 +1,11 @@
+@import "../../../styles/mixins.scss";
+
+.LessonLink {
+  @include course-link-template;
+  border: 1px solid green;
+  width: 5rem;
+  padding: 0.4rem;
+  h4 {
+    margin: 0;
+  }
+}

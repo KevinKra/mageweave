@@ -1,0 +1,11 @@
+@import "../../../styles/mixins.scss";
+
+.PracticeLink {
+  @include course-link-template;
+  border: 1px solid red;
+  width: 5rem;
+  border-radius: 10px;
+  h4 {
+    margin: 0;
+  }
+}
