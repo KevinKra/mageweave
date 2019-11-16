@@ -4,12 +4,10 @@
 .UserProfile {
   .profile-container {
     @include background-pattern-one;
+    @include page-template-one;
     display: grid;
     grid-template-columns: 22rem 15vw repeat(2, 1fr);
     grid-template-rows: 25vh 25vh repeat(4, auto);
-    width: 90vw;
-    max-width: $max-width;
-    margin: 0 auto;
   }
 }
 

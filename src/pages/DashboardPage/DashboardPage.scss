@@ -4,15 +4,11 @@
 .DashboardPage {
   .dashboard-content {
     @include background-pattern-one;
+    @include page-template-one;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0.7rem;
-    margin: 0 auto;
-    min-height: 100vh;
-    width: 90%;
-    max-width: $max-width;
-    padding: 1.5rem 0;
   }
   .courses-overview,
   .latest-course,

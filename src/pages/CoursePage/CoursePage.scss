@@ -1,3 +1,10 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
 .CoursePage {
-  border: 1px solid red;
+  .course-page-content {
+    @include background-pattern-one;
+    @include page-template-one;
+    border: 1px solid red;
+  }
 }
