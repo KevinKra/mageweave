@@ -1,0 +1,14 @@
+@import "../../../styles/mixins.scss";
+
+.TestLink {
+  @include course-link-template;
+  border: 1px solid blue;
+  height: 3rem;
+  width: 15rem;
+  border-radius: 15px;
+  padding: 0.4rem;
+  margin: 1rem;
+  h4 {
+    margin: 0;
+  }
+}
