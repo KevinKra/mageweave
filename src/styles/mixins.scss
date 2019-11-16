@@ -79,3 +79,13 @@
     radial-gradient($background-pattern 2px, transparent 0);
   background-size: 30px 30px, 30px 30px;
 }
+
+@mixin background-dark-gradient {
+  background: rgba(41, 41, 41, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(41, 41, 41, 1) 0%,
+    rgba(41, 41, 41, 1) 75%,
+    rgba(41, 41, 41, 0) 100%
+  );
+}

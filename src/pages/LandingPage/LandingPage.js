@@ -7,7 +7,7 @@ export default function LandingPage() {
     <section className="LandingPage">
       {/* <NavBar /> */}
       <section className="splash-landing">
-        <section className="title-card">
+        <div className="title-card">
           <div className="title-card-text">
             <h1>Mageweave</h1>
             <ul>
@@ -18,9 +18,11 @@ export default function LandingPage() {
             </ul>
           </div>
           <button className="button-one">Start Learning</button>
-        </section>
+        </div>
       </section>
-      <p>Landing Page</p>
+      <section className="support-content">
+        <p>Additional Content</p>
+      </section>
     </section>
   )
 }

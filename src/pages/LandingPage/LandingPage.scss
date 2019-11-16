@@ -3,13 +3,20 @@
 @import "../../styles/animations.scss";
 
 .LandingPage {
+  // background-color: $background-dark;
   .splash-landing {
     @include background-pattern-one;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     height: 100vh;
+    width: 90%;
+    background-color: $color-light;
+    border-left: 1px solid $color-dark;
+    border-right: 1px solid $color-dark;
+    box-shadow: 0px 1px 3px $color-dark;
   }
   .title-card {
     -webkit-animation-name: fadeInDown;
@@ -18,25 +25,39 @@
     animation-duration: 2s;
   }
   .title-card-text {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     min-height: 100vh;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     border: 2px solid $accent-one;
     background-color: $background-dark;
+    box-shadow: 0px 1px 3px $color-dark;
   }
   h1 {
+    @include background-dark-gradient;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 2.4s;
+    transform: translateY(25%);
+    // border: 1px solid red;
+    z-index: 2;
     cursor: default;
     margin-bottom: 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 2.5rem 1.5rem;
     font-size: 52px;
     color: $accent-one;
     font-family: $font-title;
   }
   ul {
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    padding: 1rem 0 0 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     text-decoration: none;
     color: $color-light;
   }
@@ -45,13 +66,21 @@
     list-style: none;
     font-size: 18px;
   }
+  .support-content {
+    border: 1px solid red;
+    background-color: $color-light;
+    min-height: 100vh;
+    p {
+      margin: 0;
+    }
+  }
   .button-one {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-delay: 4.5s;
     background-color: $background-dark;
     color: $color-light;
     padding: 0.8rem 2rem;

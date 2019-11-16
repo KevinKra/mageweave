@@ -3,7 +3,7 @@
 
 .UserProfile {
   .profile-container {
-    @include background-pattern-1;
+    @include background-pattern-one;
     display: grid;
     grid-template-columns: 22rem 15vw repeat(2, 1fr);
     grid-template-rows: 25vh 25vh repeat(4, auto);
