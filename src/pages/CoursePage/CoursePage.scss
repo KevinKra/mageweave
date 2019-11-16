@@ -22,9 +22,22 @@
     width: 80%;
   }
   .chapter-container {
-    border: 1px solid blue;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // height: 100vh;
     margin-bottom: 1rem;
+  }
+  .sub-chapter-level {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    width: 100%;
+  }
+  .sibling-topics {
+    display: flex;
+    border: 1px solid black;
+    padding: 0 1rem;
   }
   .support-content {
     @include card-template-1-flat;
