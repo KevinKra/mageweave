@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import "./NavBar.scss"
 
 export default function NavBar() {
@@ -7,10 +8,10 @@ export default function NavBar() {
       <div className="content">
         <h2>Mageweave</h2>
         <section>
-          <a href="">Home</a>
-          <a href="">Learn</a>
-          <a href="">Challenges</a>
-          <a href="">Profile</a>
+          <Link to="/dashboard">Home</Link>
+          <Link to="/courses">Courses</Link>
+          <Link to="/challenges">Challenges</Link>
+          <Link to="/profile">Profile</Link>
         </section>
       </div>
     </nav>
