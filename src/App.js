@@ -3,6 +3,7 @@ import UserProfile from './pages/UserProfile/UserProfile';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from './pages/LandingPage/LandingPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
+import CoursePage from './pages/CoursePage/CoursePage';
 import './App.css';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/profile">
           <UserProfile />
+        </Route>
+        <Route path="/courses">
+          <CoursePage />
         </Route>
       </Switch>
     </Router>
