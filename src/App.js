@@ -1,11 +1,22 @@
 import React from 'react';
-import './App.css';
 import UserProfile from './pages/UserProfile/UserProfile';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import './App.css';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <UserProfile />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <LandingPage />
+        </Route>
+        <Route path="/profile">
+          <UserProfile />
+        </Route>
+      </Switch>
+    </Router>
     </div>
   );
 }
