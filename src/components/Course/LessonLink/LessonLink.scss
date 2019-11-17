@@ -2,9 +2,9 @@
 
 .LessonLink {
   @include course-link-template;
-  border: 1px solid green;
   width: 5rem;
   padding: 0.4rem;
+  border: 3px solid $background-dark;
   h4 {
     margin: 0;
   }

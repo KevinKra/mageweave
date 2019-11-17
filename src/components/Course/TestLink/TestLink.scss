@@ -2,12 +2,13 @@
 
 .TestLink {
   @include course-link-template;
-  border: 1px solid blue;
   height: 3rem;
   width: 15rem;
-  border-radius: 15px;
+  border-radius: 3px;
   padding: 0.4rem;
   margin: 1rem;
+  background-color: $background-dark;
+  color: $color-light;
   h4 {
     margin: 0;
   }
