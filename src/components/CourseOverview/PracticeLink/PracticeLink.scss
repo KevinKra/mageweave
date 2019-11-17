@@ -2,6 +2,10 @@
 
 .PracticeLink {
   @include course-link-template;
+  background-color: $color-light;
+  border: 1px solid $accent-3-dark;
+  border-bottom: 4px solid $accent-3-dark;
+  color: $accent-3-font;
   width: 5rem;
   h4 {
     margin: 0;
