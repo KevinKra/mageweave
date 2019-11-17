@@ -5,7 +5,7 @@ import "./LessonLink.scss"
 export default function LessonLink(props) {
   return (
     <div className="LessonLink">
-      <LessonMarker widget={props.widget} />
+      <LessonMarker widget={props.progress} />
       <h4>{props.name}</h4>
     </div>
   )
