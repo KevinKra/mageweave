@@ -1,0 +1,19 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.Section {
+  @include card-template-1;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid $font-dark;
+}
+.sibling-topics {
+  display: flex;
+  border: 1px solid $border-light;
+  background-color: $background-light;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+}
