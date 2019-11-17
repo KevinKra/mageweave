@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import NavBar from '../../components/NavBar/NavBar';
-import LessonLink from '../../components/Course/LessonLink/LessonLink';
+import LessonLink from '../../components/CourseOverview/LessonLink/LessonLink';
+import PracticeLink from '../../components/CourseOverview/PracticeLink/PracticeLink';
+import TestLink from '../../components/CourseOverview/TestLink/TestLink';
+import SupportTool from '../../components/CourseOverview/SupportTool/SupportTool';
 import "./CoursePage.scss";
-import PracticeLink from '../../components/Course/PracticeLink/PracticeLink';
-import TestLink from '../../components/Course/TestLink/TestLink';
-import SupportTool from '../../components/Course/SupportTool/SupportTool';
 
 export default class CoursePage extends Component {
   render() {
