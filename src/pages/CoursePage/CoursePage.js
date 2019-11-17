@@ -18,25 +18,25 @@ export default class CoursePage extends Component {
                 <div className="chapter-container">
                   <h3 className="chapter-title">Ruby Fundamentals</h3>
                   <div className="sub-chapter-level">
-                    <LessonLink name="Intro to Ruby"/>
+                    <LessonLink name="Intro to Ruby" widget="3/3"/>
                   </div>
                   <div className="sub-chapter-level">
                     <div className="sibling-topics">
-                      <PracticeLink name="Ruby Methods I Practice" widget="1/5" />
+                      <PracticeLink name="Ruby Methods I Practice" />
                       <LessonLink name="Ruby Methods I" widget="2/4"/>
                     </div>
-                    <LessonLink name="Ruby Classes I"/>
+                    <LessonLink name="Ruby Classes I" widget="0/3"/>
                   </div>
                   <div className="sub-chapter-level">
-                    <LessonLink name="The Weird Parts of Ruby" />
+                    <LessonLink name="The Weird Parts of Ruby" widget="0/3" />
                   </div>
                   <div className="sub-chapter-level">
                     <div className="sibling-topics">
-                      <PracticeLink name="Ruby Methods II/III Practice" />
-                      <LessonLink name="Ruby Methods III"/>
-                      <LessonLink name="Ruby Methods II"/>
+                      <PracticeLink name="Ruby Methods II/III Practice"/>
+                      <LessonLink name="Ruby Methods III" widget="0/3"/>
+                      <LessonLink name="Ruby Methods II" widget="0/3"/>
                     </div>
-                    <LessonLink name="Ruby Classes II"/>
+                    <LessonLink name="Ruby Classes II" widget="0/3"/>
                   </div>
                   <div className="sub-chapter-level">
                     <TestLink name="Ruby Fundamentals Test"/>
