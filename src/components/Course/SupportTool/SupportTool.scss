@@ -1,0 +1,63 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.support-content {
+  @include card-template-1;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+  border: 1px solid black;
+}
+.support-overview {
+  @include border-light-rounded;
+  margin-bottom: 0.5rem;
+}
+.btn-panel {
+  @include border-light-rounded;
+  display: flex;
+  flex-direction: column;
+  button:last-child {
+    margin: 0;
+  }
+}
+.btn-template-1 {
+  @include btn-template-1;
+  @include font-alternate-1-bold;
+}
+.btn-template-2 {
+  @include btn-template-1($color-light, $border-dark, $font-dark);
+  @include font-alternate-1-bold;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  width: 100%;
+}
+.btn-template-3 {
+  @include btn-template-1($accent-3, $accent-3-dark, $font-light);
+  @include font-alternate-1-bold;
+  margin: 0.2rem;
+  width: 93%;
+}
+.social-links {
+  @include card-template-1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  h5 {
+    color: $font-dark;
+    margin: 0.4rem 0;
+  }
+  div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.support-get-help {
+  @include card-template-1;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
