@@ -1,6 +1,6 @@
 import React from 'react'
-import "./LessonLink.scss"
 import LessonMarker from '../../Widgets/LessonMarker/LessonMarker';
+import "./LessonLink.scss"
 
 export default function LessonLink(props) {
   return (
