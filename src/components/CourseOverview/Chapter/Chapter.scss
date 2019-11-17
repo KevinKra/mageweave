@@ -10,9 +10,9 @@
   border-bottom: 7px solid $border-light;
   .chapter-title {
     @include card-template-1;
+    @include background-dark;
     border-radius: 0;
     padding: 0.5rem;
-    margin: 2rem 0;
-    text-decoration: underline;
+    margin: 3rem 0 2rem 0;
   }
 }
