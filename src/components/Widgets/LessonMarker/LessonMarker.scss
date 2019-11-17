@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+.LessonMarker {
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  border: 1px solid $accent-one-dark;
+  background-color: $accent-one;
+  color: $color-light;
+  p {
+    padding: 0.2rem;
+    margin: 0;
+  }
+}
