@@ -1,13 +1,23 @@
+//generic
 $color-dark: rgb(114, 114, 114);
 $color-light: white;
 $font-dark: rgb(29, 29, 29);
+$color-icon: rgb(71, 71, 71);
+$border-dark: rgb(43, 43, 43);
+
+// Background related variables
 $background-dark: rgba(41, 41, 41, 1);
 $background-dark-font: rgb(238, 238, 238);
 $background-dark-icon: rgb(236, 236, 236);
 $background-pattern: rgb(216, 216, 216);
-$color-icon: rgb(71, 71, 71);
+
+// accents
 $accent-one: lightcoral;
 $accent-one-dark: rgb(211, 102, 102);
+$accent-two: #69ffc6;
+$accent-two-dark: #4dcc9b;
+
+// positioning
 $max-width: 1400px;
 $font-title: "Pacifico", cursive;
 $grid-gap-one: 0.7rem;
