@@ -3,12 +3,12 @@
 
 .DashboardPage {
   .dashboard-content {
-    @include background-pattern-one;
-    @include page-template-one;
+    @include background-pattern-1;
+    @include page-template-1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: $grid-gap-one;
+    grid-gap: $grid-gap-1;
   }
   .courses-overview,
   .latest-course,

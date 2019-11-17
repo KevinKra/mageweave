@@ -3,8 +3,8 @@
 
 .UserProfile {
   .profile-container {
-    @include background-pattern-one;
-    @include page-template-one;
+    @include background-pattern-1;
+    @include page-template-1;
     display: grid;
     grid-template-columns: 22rem 15vw repeat(2, 1fr);
     grid-template-rows: 25vh 25vh repeat(4, auto);
@@ -18,7 +18,7 @@
       grid-template-columns: 100%;
       grid-template-rows: 1fr auto 35vh auto;
       width: 100vw;
-      grid-row-gap: $grid-gap-one;
+      grid-row-gap: $grid-gap-1;
       padding: 0;
     }
   }
