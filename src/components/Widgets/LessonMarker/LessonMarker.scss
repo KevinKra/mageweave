@@ -17,12 +17,32 @@
   }
 }
 
-.icon-format {
-  left: -5px;
+@mixin badge-icon {
   color: $color-light;
+  height: 1.5rem;
+}
+
+.icon-bolt {
+  @include badge-icon;
+  left: -5px;
   background-color: $accent-3;
   border: 1px solid $accent-3-dark;
   border-bottom: 3px solid $accent-3-dark;
   width: 1rem;
-  height: 1.5rem;
+}
+
+.icon-project {
+  @include badge-icon;
+  background-color: $accent-2;
+  border: 1px solid $accent-2-dark;
+  border-bottom: 3px solid $accent-2-dark;
+  width: 2rem;
+}
+
+.icon-challenge {
+  @include badge-icon;
+  background-color: $accent-3;
+  border: 1px solid $accent-3-dark;
+  border-bottom: 3px solid $accent-3-dark;
+  width: 2rem;
 }
