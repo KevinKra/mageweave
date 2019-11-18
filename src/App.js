@@ -68,6 +68,37 @@ function App() {
             { id: 20, type: "test", name: "Intermediate Ruby Test", progress: "0/1", complete: false, points: 500, link: "/ruby-fundamentals-test"} 
           ]
         ]
+      },
+      {
+        chapterTitle: "Advanced Ruby", 
+        locked: true,
+        sections: [
+          [ 
+            { id: 11, type: "lesson", name: "Intro to Rails", progress: "0/3", complete: true, points: 100, link: "/intro-to-ruby" },
+            { id: 12, type: "lesson", name: "Ruby Testing II", progress: "0/2", complete: true, points: 100, link: "/ruby-testing-2" },
+            { id: 12, type: "lesson", name: "Ruby Testing III", progress: "0/2", complete: true, points: 100, link: "/ruby-testing-3" }
+          ],
+          [ 
+            { id: 6, type: "challenge", name: "Coding Challenges III", progress: "", complete: false, points: 200, link: "/ruby-coding-challenge-3" }
+          ],
+          [ 
+            { id: 16, type: "practice", name: "Ruby Methods IV Practice", progress: "", complete: false, family: "1", points: 200, link: "/ruby-methods-4-practice"},
+            { id: 17, type: "lesson", name: "Ruby Methods IV", progress: "0/2", complete: false, points: 100, family: "1", link: "/ruby-methods-4"},
+            { id: 18, type: "practice", name: "Ruby Classes IV Practice", progress: "", complete: false, points: 200, family: "1", link: "/ruby-classes-4-practice"}, 
+            { id: 19, type: "lesson", name: "Ruby Classes IV", progress: "0/3", complete: false, points: 100, link: "/ruby-classes-4"}
+          ],
+          [ 
+            { id: 13, type: "practice", name: "Ruby Classes V Practice", progress: "", complete: false, points: 200, family: "1", link: "/ruby-classes-5-practice"},
+            { id: 14, type: "lesson", name: "Ruby Classes V", progress: "0/4", complete: false, points: 100, family: "1", link: "/ruby-classes-5"},      
+            { id: 15, type: "lesson", name: "Versions of Ruby", progress: "0/1", complete: true, points: 100, link: "/the-weird-parts-of-ruby"},
+          ],
+          [
+            { id: 19, type: "project", name: "Battleship Game", progress: "0/1", complete: false, points: 750, link: "/ruby-flashcards-game"},
+          ],
+          [ 
+            { id: 20, type: "test", name: "Advanced Ruby Test", progress: "0/1", complete: false, points: 500, link: "/ruby-fundamentals-test"} 
+          ]
+        ]
       }
     ]
   }
