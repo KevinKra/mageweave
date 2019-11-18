@@ -1,0 +1,48 @@
+@import "../../../styles/variables.scss";
+
+.LessonMarker {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border: 1px solid $accent-1-dark;
+  border-bottom: 3px solid $accent-1-dark;
+  background-color: $accent-1;
+  color: $color-light;
+  p {
+    padding: 0.2rem;
+    margin: 0;
+  }
+  .icon {
+    padding: 0.2rem;
+  }
+}
+
+@mixin badge-icon {
+  color: $color-light;
+  height: 1.5rem;
+}
+
+.icon-bolt {
+  @include badge-icon;
+  left: -5px;
+  background-color: $accent-3;
+  border: 1px solid $accent-3-dark;
+  border-bottom: 3px solid $accent-3-dark;
+  width: 1rem;
+}
+
+.icon-project {
+  @include badge-icon;
+  background-color: $accent-2;
+  border: 1px solid $accent-2-dark;
+  border-bottom: 3px solid $accent-2-dark;
+  width: 2rem;
+}
+
+.icon-challenge {
+  @include badge-icon;
+  background-color: $accent-3;
+  border: 1px solid $accent-3-dark;
+  border-bottom: 3px solid $accent-3-dark;
+  width: 2rem;
+}

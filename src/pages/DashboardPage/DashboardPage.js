@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar';
 import CourseCard from '../../components/CourseCard/CourseCard';
+import {Link} from 'react-router-dom';
 import "./DashboardPage.scss";
 
 export default function DashboardPage() {
@@ -17,7 +18,7 @@ export default function DashboardPage() {
             <CourseCard name="AWS Developer"/>
             <CourseCard name="AWS DevOps"/>
           </div>
-          <a href="">See Full Catalog</a>
+          <Link to="courses/all">See Full Catalogue</Link>          
         </section>
         <section className="latest-course">
           <div className="latest-course-details">

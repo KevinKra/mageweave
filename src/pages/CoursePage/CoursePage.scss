@@ -3,46 +3,15 @@
 
 .CoursePage {
   .course-page-content {
-    @include background-pattern-one;
-    @include page-template-one;
+    @include background-pattern-1;
+    @include page-template-1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: $grid-gap-one;
+    grid-gap: $grid-gap-1;
   }
-  .course-overview {
-    @include card-template-1;
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-    border: 1px solid black;
-  }
-  .course-section {
-    margin: 0 auto;
-    border: 1px solid red;
-    width: 80%;
-  }
-  .chapter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // height: 100vh;
-    margin-bottom: 1rem;
-  }
-  .sub-chapter-level {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
-    width: 100%;
-  }
-  .sibling-topics {
-    display: flex;
-    border: 1px solid black;
-    padding: 0 1rem;
-  }
-  .support-content {
-    @include card-template-1-flat;
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    border: 1px solid black;
+  .sticky-wrapper {
+    position: sticky;
+    top: 4.2rem;
   }
 }
