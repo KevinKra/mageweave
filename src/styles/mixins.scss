@@ -80,6 +80,23 @@
   background-size: 30px 30px, 30px 30px;
 }
 
+@mixin background-pattern-2 {
+  $dot-color: #e7e7e7;
+  $dot-size: 2px;
+  $dot-space: 22px;
+
+  background: linear-gradient(
+        90deg,
+        $color-light ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient($color-light ($dot-space - $dot-size), transparent 1%)
+      center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
+}
+
 @mixin page-template-1 {
   padding: 1.5rem 0;
   width: 90%;
@@ -96,22 +113,6 @@
     rgba(41, 41, 41, 1) 75%,
     rgba(41, 41, 41, 0) 100%
   );
-}
-
-@mixin course-badge-template {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 5rem;
-  padding: 0.4rem;
-  margin: 1.5rem 0.5rem;
-  border: 1px solid $background-dark;
-  border-radius: 5px;
-  background-color: $color-light;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 //border
