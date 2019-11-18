@@ -2,15 +2,23 @@ import React from 'react'
 import TopicBadge from '../TopicBadge/TopicBadge';
 import "./Section.scss";
 
-export default function Section(props) {
+export default function Section({lessons, locked}) {
   const output = 
-    props.lessons.map((lesson) => {
+    lessons.map((lesson) => {
       return <TopicBadge lesson={lesson} type={lesson.type}/>
     })
   
-    return (
-      <section className="Section">
-        {output}
-      </section>
-    )
+    if (locked === true) {
+      return (
+        <section className="Section locked">
+          {output}
+        </section>
+      )
+    } else {
+      return (
+        <section className="Section">
+          {output}
+        </section>
+      )
+    }
 }
