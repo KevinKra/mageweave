@@ -3,14 +3,24 @@ import "./SupportTool.scss"
 
 export default function SupportTool() {
   return (
-    <Fragment>
+    <section className="SupportTool">
       <section className="support-content">
         <section className="support-progress">
           <div className="support-overview">
-            <h2>Chapter Progress:</h2>
-            <h3>17%</h3>
-            <h2>Today's XP:</h2>
-            <h3>175/1500</h3>
+            <aside className="progress-container">
+              <h3>Progress:</h3>
+              <div className="progress-circle">
+                <h4 className="circle-xp">17%</h4>
+              </div>
+            </aside>
+            <aside className="goal-container">
+              <h3>Daily Goal:</h3>
+              <h4>175xp</h4>
+            </aside>
+            <aside className="xp-container">
+              <h3>XP:</h3>
+              <h4>100/175px</h4>
+            </aside>
           </div>
         </section>
         <section className="btn-panel">
@@ -30,6 +40,6 @@ export default function SupportTool() {
           <button className="btn-template-2">Instagram</button>
         </div>
       </section>
-    </Fragment>
+    </section>
   )
 }
