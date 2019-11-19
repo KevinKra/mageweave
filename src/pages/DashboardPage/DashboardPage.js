@@ -12,17 +12,36 @@ export default function DashboardPage() {
         <section className="courses-overview">
           <h3>Popular Courses:</h3>
           <div className="courses">
-            <CourseCard name="Ruby"/>
-            <CourseCard name="JavaScript"/>
-            <CourseCard name="AWS Practitioner"/>
-            <CourseCard name="AWS Developer"/>
-            <CourseCard name="AWS DevOps"/>
+            <CourseCard 
+              name="Ruby" 
+              author="Mageweave" 
+              totalUsers="74" 
+              estimatedDuration="9h"
+            />
+            <CourseCard 
+              name="JavaScript" 
+              author="Mageweave" 
+              totalUsers="311" 
+              estimatedDuration="10h"
+            />
+            <CourseCard 
+              name="Rails" 
+              author="Mageweave" 
+              totalUsers="73" 
+              estimatedDuration="13h"
+            />
+            <CourseCard 
+              name="AWS Practitioner" 
+              author="Mageweave" 
+              totalUsers="545" 
+              estimatedDuration="21h"
+            />
           </div>
           <Link to="courses/all">See Full Catalogue</Link>          
         </section>
         <section className="latest-course">
           <div className="latest-course-details">
-            <h2>Course Title</h2>
+            <h2>Latest Course Title</h2>
             <p>Course details</p>
           </div>
           <button className="latest-course-resume">
