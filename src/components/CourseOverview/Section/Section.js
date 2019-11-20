@@ -5,7 +5,7 @@ import "./Section.scss";
 export default function Section({lessons, locked}) {
   const output = 
     lessons.map((lesson) => {
-      return <TopicBadge lesson={lesson} type={lesson.type}/>
+      return <TopicBadge lesson={lesson} type={lesson.type} destination={lesson.link}/>
     })
   
     if (locked === true) {
