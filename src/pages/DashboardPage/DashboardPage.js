@@ -56,7 +56,29 @@ export default function DashboardPage() {
           <button>Write Lecture</button>
         </section>
         <section className="coding-challenges">
-          <p>Coding Challenges</p>
+          <aside className="challenges">
+            <section className="current-details">
+              <p>Current Rank</p>
+              <p>challenge description</p>
+            </section>
+            <button className="btn-template-2">Train</button>
+            <button className="btn-template-2">Skip</button>
+          </aside>
+          <aside className="challenges-support">
+            <div className="challenge-stats">
+              <h3>Current Rank</h3>
+              <p>7</p>
+              <h3>Current XP</h3>
+              <p>125/150</p>
+              <h3>Current Streak</h3>
+              <p>17</p>
+            </div>
+            <div className="support-panel">
+              <button className="btn-template-2">Practice</button>
+              <button className="btn-template-2">Solutions</button>
+              <button className="btn-template-2">Create</button>
+            </div>
+          </aside>
         </section>
         <section className="qa-section">
           <p>Stackoverflow</p>

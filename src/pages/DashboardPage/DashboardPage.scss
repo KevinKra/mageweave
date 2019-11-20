@@ -64,7 +64,41 @@
   .coding-challenges {
     grid-column: 1 / 3;
     grid-row: 3 / 6;
+    display: flex;
     border: 1px solid blue;
+    .challenges {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding: 0.1rem 0.5rem;
+    }
+    .current-details {
+      @include card-template-1;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem auto;
+      width: 100%;
+      height: 85%;
+    }
+    button {
+      margin: 0.2rem auto;
+    }
+    .challenges-support {
+      border: 1px solid red;
+      margin: 0.5rem auto;
+      width: 40%;
+      .challenge-stats {
+        border: 1px solid green;
+        // height: 50%;
+      }
+    }
+    .support-panel {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      // height: 50%;
+    }
   }
   .qa-section {
     grid-column: 3 / 5;
