@@ -1,126 +1,109 @@
 @import "./variables.scss";
 
 @mixin card-template-1 {
-  border: 1px solid $color-dark;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0px 2px 3px $color-dark;
-  background-color: white;
+	border: 1px solid $color-dark;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 2px 3px $color-dark;
+	background-color: white;
+}
+
+@mixin card-template-1-locked {
+	border: 1px solid $color-dark;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 2px 3px $color-dark;
+	background-color: white;
+	button {
+		@include btn-template-1-locked;
+	}
 }
 
 @mixin card-template-1-flat {
-  border: 1px solid $color-dark;
-  border-radius: 5px;
-  background-color: white;
+	border: 1px solid $color-dark;
+	border-radius: 5px;
+	background-color: white;
 }
 
 @mixin background-dark {
-  color: $background-dark-font;
-  background-color: $background-dark;
-  .icon {
-    color: $background-dark-icon;
-  }
+	color: $background-dark-font;
+	background-color: $background-dark;
+	.icon {
+		color: $background-dark-icon;
+	}
 }
 
 @mixin header-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 0.8rem;
-  height: 10vh;
-  h2 {
-    padding: 0.2rem 0 0.4rem 0;
-  }
-  h2,
-  h3,
-  h4 {
-    margin: 0;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 0.8rem;
+	height: 10vh;
+	h2 {
+		padding: 0.2rem 0 0.4rem 0;
+	}
+	h2,
+	h3,
+	h4 {
+		margin: 0;
+	}
 
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-  }
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) {
+	}
 
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-  }
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+	}
 
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-  }
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) {
+	}
 
-  // Extra large devices (large desktops, 1600px and up)
-  @media (min-width: 1900px) {
-    height: 7vh;
-    h3 {
-      font-size: 24px;
-    }
-  }
+	// Extra large devices (large desktops, 1600px and up)
+	@media (min-width: 1900px) {
+		height: 7vh;
+		h3 {
+			font-size: 24px;
+		}
+	}
 }
 
 @mixin background-pattern-1 {
-  background-image: linear-gradient(
-      45deg,
-      transparent 20%,
-      $background-pattern 25%,
-      transparent 25%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 20%,
-      $background-pattern 25%,
-      transparent 25%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 75%,
-      $background-pattern 80%,
-      transparent 0
-    ),
-    radial-gradient($background-pattern 2px, transparent 0);
-  background-size: 30px 30px, 30px 30px;
+	background-image: linear-gradient(45deg, transparent 20%, $background-pattern 25%, transparent 25%),
+		linear-gradient(-45deg, transparent 20%, $background-pattern 25%, transparent 25%),
+		linear-gradient(-45deg, transparent 75%, $background-pattern 80%, transparent 0),
+		radial-gradient($background-pattern 2px, transparent 0);
+	background-size: 30px 30px, 30px 30px;
 }
 
 @mixin background-pattern-2 {
-  $dot-color: #e7e7e7;
-  $dot-size: 2px;
-  $dot-space: 22px;
+	$dot-color: #e7e7e7;
+	$dot-size: 2px;
+	$dot-space: 22px;
 
-  background: linear-gradient(
-        90deg,
-        $color-light ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    linear-gradient($color-light ($dot-space - $dot-size), transparent 1%)
-      center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+	background: linear-gradient(90deg, $color-light ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($color-light ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+	background-size: $dot-space $dot-space;
 }
 
 @mixin page-template-1 {
-  @include background-pattern-1;
-  padding: 1.5rem 0;
-  width: 90%;
-  max-width: $max-width;
-  min-height: 100vh;
-  margin: 0 auto;
+	@include background-pattern-1;
+	padding: 1.5rem 0;
+	width: 90%;
+	max-width: $max-width;
+	min-height: 100vh;
+	margin: 0 auto;
 }
 
 @mixin background-dark-gradient {
-  background: rgba(41, 41, 41, 1);
-  background: linear-gradient(
-    180deg,
-    rgba(41, 41, 41, 1) 0%,
-    rgba(41, 41, 41, 1) 75%,
-    rgba(41, 41, 41, 0) 100%
-  );
+	background: rgba(41, 41, 41, 1);
+	background: linear-gradient(180deg, rgba(41, 41, 41, 1) 0%, rgba(41, 41, 41, 1) 75%, rgba(41, 41, 41, 0) 100%);
 }
 
 //border
 @mixin border-light-rounded {
-  border: 1px solid $border-light;
-  border-radius: 5px;
-  padding: 0.5rem;
+	border: 1px solid $border-light;
+	border-radius: 5px;
+	padding: 0.5rem;
 }
 
 //button
@@ -129,25 +112,30 @@
   $color-2: $accent-2-dark,
   $font-color: $font-light
 ) {
-  @include font-alternate-1-bold;
-  border: 1px solid $color-2;
-  border-bottom: 4px solid $color-2;
-  background-color: $color;
-  color: $font-color;
-  border-radius: 5px;
-  margin: 0 0 0.5rem 0;
-  padding: 1rem;
-  cursor: pointer;
+	@include font-alternate-1-bold;
+	border: 1px solid $color-2;
+	border-bottom: 4px solid $color-2;
+	background-color: $color;
+	color: $font-color;
+	border-radius: 5px;
+	margin: 0 0 0.5rem 0;
+	padding: 1rem;
+	cursor: pointer;
+}
+
+@mixin btn-template-1-locked {
+	@include btn-template-1($accent-4, $accent-4-dark);
+	pointer-events: none;
 }
 
 //font
 @mixin font-alternate-1 {
-  font-family: $font-body;
-  font-size: 18px;
-  font-weight: 300;
+	font-family: $font-body;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 @mixin font-alternate-1-bold {
-  @include font-alternate-1;
-  font-weight: 900;
+	@include font-alternate-1;
+	font-weight: 900;
 }
