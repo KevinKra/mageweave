@@ -1,9 +1,9 @@
 import React from 'react';
 import UserProfile from './pages/UserProfile/UserProfile';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import LandingPage from './pages/LandingPage/LandingPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
 import CoursePage from './pages/CoursePage/CoursePage';
+import LessonPage from './pages/LessonPage/LessonPage';
 import './App.css';
 
 function App() {
@@ -107,7 +107,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <LandingPage />
+          <DashboardPage />
         </Route>
         <Route path="/dashboard">
           <DashboardPage />
@@ -120,6 +120,9 @@ function App() {
         </Route>
         <Route exact path="/courses/ruby">
           <CoursePage course={ruby}/>
+        </Route>
+        <Route exact path="/courses/lesson/intro-to-ruby">
+          <LessonPage />
         </Route>
       </Switch>
     </Router>
