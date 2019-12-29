@@ -41,15 +41,31 @@ export default function DashboardPage() {
         </section>
         <section className="latest-course">
           <div className="latest-course-details">
-            <h2>Latest Course Title</h2>
-            <p>Course details</p>
+            <h2>JavaScript</h2>
+            <p>A comprehensive look at Javascript from the little bits to the big bits.</p>
+            <section className="course-stats">
+              <aside className="progress-circle">
+                <h3>0%</h3>
+              </aside>
+              <aside className="progress-fractions">
+                <div>
+                  <h4>Chapters</h4>
+                  <p>0/4</p>
+                </div>
+                <div>
+                  <h4>Projects</h4>
+                  <p>0/2</p>
+                </div>
+                <div>
+                  <h4>Challenges</h4>
+                  <p>0/3</p>
+                </div>
+              </aside>
+          </section>
           </div>
           <button className="latest-course-resume">
             Resume
           </button>
-          <div className="latest-course-percentage">
-            <p>Percentage %</p>
-          </div>
         </section>
         <section className="author-options">
           <button>Create Course</button>
