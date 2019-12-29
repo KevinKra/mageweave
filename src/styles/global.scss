@@ -1,0 +1,10 @@
+.lock-icon {
+	border: 1px solid $border-dark;
+	background-color: $locked-dark;
+	color: $color-light;
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	padding: .7rem;
+	box-shadow: 1px 1px 2px $color-dark;
+}
