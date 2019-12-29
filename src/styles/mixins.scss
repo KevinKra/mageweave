@@ -98,6 +98,7 @@
 }
 
 @mixin page-template-1 {
+  @include background-pattern-1;
   padding: 1.5rem 0;
   width: 90%;
   max-width: $max-width;
