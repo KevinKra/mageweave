@@ -1,13 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench } from '@fortawesome/free-solid-svg-icons';
+import './ChallengesOverview.scss';
 
-export default function ChallengeOverview() {
+export default function ChallengesOverview() {
 	return (
 		<section className="coding-challenges">
 			<div className="lock-icon">
 				<FontAwesomeIcon className="icon" icon={faWrench} size="lg" transform="down" />
 			</div>
+			<h3 className="section-title">Challenges</h3>
 			<aside className="challenges">
 				<section className="current-details">
 					<header>
@@ -29,21 +31,6 @@ export default function ChallengeOverview() {
 					<button>Train</button>
 					<button>Skip</button>
 				</section>
-			</aside>
-			<aside className="challenges-support">
-				<div className="challenge-stats">
-					<h3>Current Rank</h3>
-					<p>7</p>
-					<h3>Current XP</h3>
-					<p>125/150</p>
-					<h3>Current Streak</h3>
-					<p>17</p>
-				</div>
-				<div className="support-panel">
-					<button className="btn-template-2">Practice</button>
-					<button className="btn-template-2">Solutions</button>
-					<button className="btn-template-2">Create</button>
-				</div>
 			</aside>
 		</section>
 	);
