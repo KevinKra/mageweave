@@ -1,10 +1,10 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
-import ChallengeOverview from '../../components/ChallengeOverview/ChallengeOverview';
 import CoursesOverview from '../../components/CoursesOverview/CoursesOverview';
 import LatestCourse from '../../components/LatestCourse/LatestCourse';
 import AuthorOverview from '../../components/AuthorOverview/AuthorOverview';
 import ArticlesOverview from '../../components/ArticlesOverview/ArticlesOverview';
+import ChallengesOverview from '../../components/ChallengesOverview/ChallengesOverview';
 import './DashboardPage.scss';
 
 export default function DashboardPage() {
@@ -15,7 +15,22 @@ export default function DashboardPage() {
 				<CoursesOverview />
 				<LatestCourse />
 				<AuthorOverview />
-				<ChallengeOverview />
+				<ChallengesOverview />
+				<section className="challenges-support">
+					<h3>Practice</h3>
+					<header className="results-panel">
+						<h4>Rank: Youngling</h4>
+						<div>
+							<p>Points: 233/500</p>
+							<p>Streak: 7</p>
+						</div>
+					</header>
+					<footer className="support-panel">
+						<button>Flashcards</button>
+						<button>Games</button>
+						<button>Quiz</button>
+					</footer>
+				</section>
 				<ArticlesOverview />
 			</div>
 		</section>
