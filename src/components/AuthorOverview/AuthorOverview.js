@@ -1,12 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWrench, faBookmark } from '@fortawesome/free-solid-svg-icons';
+import { faWrench } from '@fortawesome/free-solid-svg-icons';
 
 export default function AuthorOverview() {
 	return (
 		<section className="author-options">
 			<div className="lock-icon">
-				<FontAwesomeIcon className="icon" icon={faWrench} size="lg" transform="down" />
+				<FontAwesomeIcon
+					className="icon"
+					icon={faWrench}
+					size="lg"
+					transform="down"
+				/>
 			</div>
 			<h3>Course Management</h3>
 			<div className="btn-container">
