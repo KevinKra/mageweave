@@ -4,7 +4,7 @@ import './AuthPage.scss';
 import RegistrationForm from '../../components/general/forms/Registration/RegistrationForm';
 import LoginForm from '../../components/general/forms/Login/LoginForm';
 
-export default function AuthPage() {
+const AuthPage = () => {
 	return (
 		<section className="AuthPage">
 			<NavBar />
@@ -19,4 +19,6 @@ export default function AuthPage() {
 			</section>
 		</section>
 	);
-}
+};
+
+export default AuthPage;

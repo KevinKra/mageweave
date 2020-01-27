@@ -7,7 +7,7 @@ import ArticlesOverview from '../../components/ArticlesOverview/ArticlesOverview
 import ChallengesOverview from '../../components/ChallengesOverview/ChallengesOverview';
 import './DashboardPage.scss';
 
-export default function DashboardPage() {
+const DashboardPage = () => {
 	return (
 		<section className="DashboardPage">
 			<NavBar />
@@ -35,4 +35,6 @@ export default function DashboardPage() {
 			</div>
 		</section>
 	);
-}
+};
+
+export default DashboardPage;
