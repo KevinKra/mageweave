@@ -1,41 +1,44 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-export default class LoginForm extends Component {
-	state = {
+const LoginForm = () => {
+	const [ formData, setFormData ] = useState({
 		email: '',
 		password: ''
-	};
+	});
 
-	handleChange = (e) => {
+	const handleChange = (e) => {
 		const { name, value } = e.target;
-		this.setState({ [name]: value });
+		setFormData({ [name]: value });
 	};
 
-	handleSubmit = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log('Registered');
 	};
 
-	render() {
-		return (
-			<section className="LoginForm">
-				<h4>Login to Account</h4>
-				<form action="">
-					<label htmlFor="email">Email:</label>
-					<input
-						type="email"
-						name="email"
-						onChange={(e) => this.handleChange(e)}
-					/>
-					<label htmlFor="password">Password:</label>
-					<input
-						type="password"
-						name="password"
-						onChange={(e) => this.handleChange(e)}
-					/>
-					<button onClick={(e) => this.handleSubmit(e)}>Login</button>
-				</form>
-			</section>
-		);
-	}
-}
+	const { email, password } = formData;
+	return (
+		<section className="LoginForm">
+			<h4>Login to Account</h4>
+			<form action="">
+				<label htmlFor="email">Email:</label>
+				<input
+					type="email"
+					name="email"
+					value={email}
+					onChange={(e) => handleChange(e)}
+				/>
+				<label htmlFor="password">Password:</label>
+				<input
+					type="password"
+					name="password"
+					value={password}
+					onChange={(e) => handleChange(e)}
+				/>
+				<button onClick={(e) => handleSubmit(e)}>Login</button>
+			</form>
+		</section>
+	);
+};
+
+export default LoginForm;

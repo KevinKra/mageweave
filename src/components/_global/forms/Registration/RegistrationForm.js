@@ -1,50 +1,62 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-export default class RegistrationForm extends Component {
-	state = {
+const RegistrationForm = () => {
+	const [ formData, setFormData ] = useState({
 		name: '',
 		email: '',
-		password: ''
-	};
-
-	handleChange = (e) => {
+		password: '',
+		passwordConfirmation: ''
+	});
+	const handleChange = (e) => {
 		const { name, value } = e.target;
-		this.setState({ [name]: value });
+		setFormData({ ...formData, [name]: value });
 	};
 
-	handleSubmit = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log('Registered');
 	};
 
-	render() {
-		return (
-			<section className="RegistrationForm">
-				<h4>Register an Account</h4>
-				<form action="">
-					<label htmlFor="name">Name:</label>
-					<input
-						type="text"
-						name="name"
-						onChange={(e) => this.handleChange(e)}
-					/>
-					<label htmlFor="email">Email:</label>
-					<input
-						type="email"
-						name="email"
-						onChange={(e) => this.handleChange(e)}
-					/>
-					<label htmlFor="password">Password:</label>
-					<input
-						type="password"
-						name="password"
-						onChange={(e) => this.handleChange(e)}
-					/>
-					<button onClick={(e) => this.handleSubmit(e)}>
-						Register
-					</button>
-				</form>
-			</section>
-		);
-	}
-}
+	const { name, email, password, passwordConfirmation } = formData;
+
+	return (
+		<section className="RegistrationForm">
+			<h4>Register an Account</h4>
+			<form action="">
+				<label htmlFor="name">Name:</label>
+				<input
+					type="text"
+					name="name"
+					value={name}
+					onChange={(e) => handleChange(e)}
+				/>
+				<label htmlFor="email">Email:</label>
+				<input
+					type="email"
+					name="email"
+					value={email}
+					onChange={(e) => handleChange(e)}
+				/>
+				<label htmlFor="password">Password:</label>
+				<input
+					type="password"
+					name="password"
+					value={password}
+					onChange={(e) => handleChange(e)}
+				/>
+				<label htmlFor="passwordConfirmation">
+					Password Confirmation:
+				</label>
+				<input
+					type="password"
+					name="passwordConfirmation"
+					value={passwordConfirmation}
+					onChange={(e) => handleChange(e)}
+				/>
+				<button onClick={(e) => handleSubmit(e)}>Register</button>
+			</form>
+		</section>
+	);
+};
+
+export default RegistrationForm;
