@@ -21,8 +21,11 @@ export const App = () => {
 					<Route exact path="/dashboard">
 						<DashboardPage />
 					</Route>
-					<Route exact path="/authenticate">
-						<AuthPage />
+					<Route exact path="/login">
+						<AuthPage format="login" />
+					</Route>
+					<Route exact path="/register">
+						<AuthPage format="register" />
 					</Route>
 					<Route exact path="/profile">
 						<UserProfile />
