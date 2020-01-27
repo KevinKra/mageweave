@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const RegistrationForm = () => {
@@ -79,6 +80,9 @@ const RegistrationForm = () => {
 				/>
 				<button>Register</button>
 			</form>
+			<Link to="/login">
+				Already have an account? Click here to login.
+			</Link>
 		</section>
 	);
 };

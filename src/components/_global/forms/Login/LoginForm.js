@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const LoginForm = () => {
@@ -35,7 +36,7 @@ const LoginForm = () => {
 	return (
 		<section className="LoginForm">
 			<h4>Login to Account</h4>
-			<form action="">
+			<form action="" onSubmit={(e) => handleSubmit(e)}>
 				<label htmlFor="email">Email:</label>
 				<input
 					type="email"
@@ -52,8 +53,11 @@ const LoginForm = () => {
 					onChange={(e) => handleChange(e)}
 					required
 				/>
-				<button onClick={(e) => handleSubmit(e)}>Login</button>
+				<button>Login</button>
 			</form>
+			<Link to="/register">
+				Don't have an account? Click here to register an account.
+			</Link>
 		</section>
 	);
 };
