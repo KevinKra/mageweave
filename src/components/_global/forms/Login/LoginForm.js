@@ -36,7 +36,7 @@ const LoginForm = () => {
 	return (
 		<section className="LoginForm">
 			<h4>Login to Account</h4>
-			<form action="" onSubmit={(e) => handleSubmit(e)}>
+			<form onSubmit={(e) => handleSubmit(e)}>
 				<label htmlFor="email">Email:</label>
 				<input
 					type="email"

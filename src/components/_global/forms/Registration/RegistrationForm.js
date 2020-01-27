@@ -43,7 +43,7 @@ const RegistrationForm = () => {
 	return (
 		<section className="RegistrationForm">
 			<h4>Register an Account</h4>
-			<form action="" onSubmit={(e) => handleSubmit(e)}>
+			<form onSubmit={(e) => handleSubmit(e)}>
 				<label htmlFor="name">Name:</label>
 				<input
 					type="text"
