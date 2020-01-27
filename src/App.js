@@ -7,7 +7,7 @@ import LessonPage from './pages/LessonPage/LessonPage';
 import './App.css';
 import AuthPage from './pages/AuthPage/AuthPage';
 
-function App() {
+export const App = () => {
 	const ruby = {
 		mainTitle: 'The Complete Ruby Course',
 		chapters: [
@@ -435,6 +435,4 @@ function App() {
 			</Router>
 		</div>
 	);
-}
-
-export default App;
+};
