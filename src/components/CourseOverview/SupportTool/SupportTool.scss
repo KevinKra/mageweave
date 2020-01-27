@@ -1,27 +1,71 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
 
-.support-content {
-  @include card-template-1;
-  grid-column: 2 / 3;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 0.7rem;
-  border: 1px solid black;
-}
-.support-overview {
-  @include border-light-rounded;
-  margin-bottom: 0.5rem;
-}
-.btn-panel {
-  @include border-light-rounded;
-  display: flex;
-  flex-direction: column;
-  button:last-child {
+.SupportTool {
+  .support-content {
+    @include card-template-1;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    border: 1px solid black;
+  }
+  .support-overview {
+    @include border-light-rounded;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 3rem 3rem 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-panel {
+    @include border-light-rounded;
+    display: flex;
+    flex-direction: column;
+    button:last-child {
+      margin: 0;
+    }
+  }
+  .progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid $accent-4;
+    height: 100px;
+    width: 100px;
+  }
+  .circle-xp {
+    font-size: 22px;
+  }
+  .progress-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    padding: 0 1rem;
+  }
+  .goal-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+  .xp-container {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  h4 {
+    display: inline-block;
     margin: 0;
   }
 }
+
 .btn-template-1 {
   @include btn-template-1;
   @include font-alternate-1-bold;

@@ -1,19 +1,24 @@
-import React from 'react'
-import {Link} from "react-router-dom"
-import "./NavBar.scss"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './NavBar.scss';
 
-export default function NavBar() {
-  return (
-    <nav className="NavBar">
-      <div className="content">
-        <h2>Mageweave</h2>
-        <section>
-          <Link to="/dashboard">Home</Link>
-          <Link to="/courses">Courses</Link>
-          <Link to="/challenges">Challenges</Link>
-          <Link to="/profile">Profile</Link>
-        </section>
-      </div>
-    </nav>
-  )
-}
+const NavBar = () => {
+	return (
+		<nav className="NavBar">
+			<div className="content">
+				<Link to="/dashboard">
+					<h2>Mageweave</h2>
+				</Link>
+				<section>
+					<Link to="/courses">Courses</Link>
+					<Link to="/challenges">Challenges</Link>
+					<Link to="/login">Login</Link>
+					<Link to="/register">Register</Link>
+					<Link to="/profile">Profile</Link>
+				</section>
+			</div>
+		</nav>
+	);
+};
+
+export default NavBar;

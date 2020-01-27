@@ -3,7 +3,6 @@
 
 .CoursePage {
   .course-page-content {
-    @include background-pattern-1;
     @include page-template-1;
     display: grid;
     grid-template-columns: 3fr 1fr;
