@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import './ProfileLinks.scss';
 
-export default function ProfileLinks() {
+const ProfileLinks = () => {
 	return (
 		<section className="ProfileLinks">
 			{/* <h3>External Links:</h3> */}
@@ -40,4 +40,6 @@ export default function ProfileLinks() {
 			</article>
 		</section>
 	);
-}
+};
+
+export default ProfileLinks;
