@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const RegistrationForm = () => {
 	const [ formData, setFormData ] = useState({
@@ -7,28 +8,48 @@ const RegistrationForm = () => {
 		password: '',
 		passwordConfirmation: ''
 	});
+	const { name, email, password, passwordConfirmation } = formData;
+
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData({ ...formData, [name]: value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		console.log('Registered');
-	};
+		if (password !== passwordConfirmation) {
+			console.log("Passwords don't match");
+		} else {
+			const newUser = {
+				name,
+				email,
+				password
+			};
 
-	const { name, email, password, passwordConfirmation } = formData;
+			try {
+				const config = {
+					headers: { 'Content-Type': 'application/json' }
+				};
+				const body = JSON.stringify(newUser);
+				const res = await axios.post('/api/users', body, config);
+				console.log(res.data);
+			} catch (error) {
+				console.log(error.response.data);
+			}
+		}
+	};
 
 	return (
 		<section className="RegistrationForm">
 			<h4>Register an Account</h4>
-			<form action="">
+			<form action="" onSubmit={(e) => handleSubmit(e)}>
 				<label htmlFor="name">Name:</label>
 				<input
 					type="text"
 					name="name"
 					value={name}
 					onChange={(e) => handleChange(e)}
+					required
 				/>
 				<label htmlFor="email">Email:</label>
 				<input
@@ -36,6 +57,7 @@ const RegistrationForm = () => {
 					name="email"
 					value={email}
 					onChange={(e) => handleChange(e)}
+					required
 				/>
 				<label htmlFor="password">Password:</label>
 				<input
@@ -43,6 +65,7 @@ const RegistrationForm = () => {
 					name="password"
 					value={password}
 					onChange={(e) => handleChange(e)}
+					required
 				/>
 				<label htmlFor="passwordConfirmation">
 					Password Confirmation:
@@ -52,8 +75,9 @@ const RegistrationForm = () => {
 					name="passwordConfirmation"
 					value={passwordConfirmation}
 					onChange={(e) => handleChange(e)}
+					required
 				/>
-				<button onClick={(e) => handleSubmit(e)}>Register</button>
+				<button>Register</button>
 			</form>
 		</section>
 	);
