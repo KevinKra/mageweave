@@ -12,7 +12,8 @@ const NavBar = () => {
 				<section>
 					<Link to="/courses">Courses</Link>
 					<Link to="/challenges">Challenges</Link>
-					<Link to="/authenticate">Login / Register</Link>
+					<Link to="/login">Login</Link>
+					<Link to="/register">Register</Link>
 					<Link to="/profile">Profile</Link>
 				</section>
 			</div>
