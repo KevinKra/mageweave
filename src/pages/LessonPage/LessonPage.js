@@ -1,11 +1,9 @@
 import React from 'react';
 import './LessonPage.scss';
-import NavBar from '../../components/NavBar/NavBar';
 
 const LessonPage = () => {
 	return (
 		<section className="LessonPage">
-			<NavBar />
 			<section className="lesson-page-content">
 				<article className="lesson-content">
 					<h1 className="lesson-title">Intro to Ruby</h1>

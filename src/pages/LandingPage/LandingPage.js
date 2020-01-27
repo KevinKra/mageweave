@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './LandingPage.scss';
 
@@ -8,7 +8,6 @@ const LandingPage = () => {
 	};
 	return (
 		<section className="LandingPage">
-			{/* <NavBar /> */}
 			<section className="splash-landing">
 				<div className="title-card">
 					<div className="title-card-text">

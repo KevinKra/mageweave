@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../../components/NavBar/NavBar';
 import CoursesOverview from '../../components/CoursesOverview/CoursesOverview';
 import LatestCourse from '../../components/LatestCourse/LatestCourse';
 import AuthorOverview from '../../components/AuthorOverview/AuthorOverview';
@@ -10,7 +9,6 @@ import './DashboardPage.scss';
 const DashboardPage = () => {
 	return (
 		<section className="DashboardPage">
-			<NavBar />
 			<div className="dashboard-content">
 				<CoursesOverview />
 				<LatestCourse />
