@@ -1,7 +1,7 @@
 import React from 'react';
 import './SupportTool.scss';
 
-export default function SupportTool() {
+const SupportTool = () => {
 	return (
 		<section className="SupportTool">
 			<section className="support-content">
@@ -42,4 +42,6 @@ export default function SupportTool() {
 			</section>
 		</section>
 	);
-}
+};
+
+export default SupportTool;

@@ -1,11 +1,14 @@
 import React from 'react';
 
-export default function LatestCourse() {
+const LatestCourse = () => {
 	return (
 		<section className="latest-course">
 			<div className="latest-course-details">
 				<h2>JavaScript</h2>
-				<p class="course-brief">A comprehensive look at Javascript from the little bits to the big bits.</p>
+				<p class="course-brief">
+					A comprehensive look at Javascript from the little bits to
+					the big bits.
+				</p>
 				<section className="course-stats">
 					<aside className="progress-circle">
 						<h3>0%</h3>
@@ -29,4 +32,6 @@ export default function LatestCourse() {
 			<button className="latest-course-resume">Resume</button>
 		</section>
 	);
-}
+};
+
+export default LatestCourse;
