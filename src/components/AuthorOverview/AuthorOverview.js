@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench } from '@fortawesome/free-solid-svg-icons';
 
-export default function AuthorOverview() {
+const AuthorOverview = () => {
 	return (
 		<section className="author-options">
 			<div className="lock-icon">
@@ -20,4 +20,6 @@ export default function AuthorOverview() {
 			</div>
 		</section>
 	);
-}
+};
+
+export default AuthorOverview;
