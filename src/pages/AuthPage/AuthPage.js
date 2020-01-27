@@ -1,6 +1,6 @@
 import React from 'react';
-import RegistrationForm from '../../components/general/forms/Registration/RegistrationForm';
-import LoginForm from '../../components/general/forms/Login/LoginForm';
+import RegistrationForm from '../../components/_global/forms/Registration/RegistrationForm';
+import LoginForm from '../../components/_global/forms/Login/LoginForm';
 import './AuthPage.scss';
 
 const AuthPage = ({ format }) => {
