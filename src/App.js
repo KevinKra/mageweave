@@ -18,13 +18,13 @@ export const App = () => {
 					<Route exact path="/">
 						<DashboardPage />
 					</Route>
-					<Route path="/dashboard">
+					<Route exact path="/dashboard">
 						<DashboardPage />
 					</Route>
-					<Route path="/authenticate">
+					<Route exact path="/authenticate">
 						<AuthPage />
 					</Route>
-					<Route path="/profile">
+					<Route exact path="/profile">
 						<UserProfile />
 					</Route>
 					<Route exact path="/courses">
