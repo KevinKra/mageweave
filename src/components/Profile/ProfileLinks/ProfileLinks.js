@@ -15,7 +15,7 @@ export default function ProfileLinks() {
 				<FontAwesomeIcon
 					className="icon"
 					icon={faLinkedin}
-					size="xlg"
+					size="2x"
 					transform="down"
 				/>
 				<a href="/">Linkedin</a>
